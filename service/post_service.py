@@ -1,5 +1,3 @@
-from http.client import HTTPException
-
 from domain.post import PostCreate, PostUpdate, PostOut
 from cached_repositories.post_cache_repo import PostCacheRepository
 from typing import List, Optional

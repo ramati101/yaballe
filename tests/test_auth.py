@@ -2,7 +2,6 @@ import pytest
 
 @pytest.mark.asyncio
 async def test_register_and_login(client):
-    # הרשמה
     response = await client.post("/auth/register", json={
         "username": "testuser5",
         "password": "testpass"
@@ -11,7 +10,6 @@ async def test_register_and_login(client):
     token = response.json()["access_token"]
     assert token
 
-    # התחברות
     response = await client.post("/auth/login", json={
         "username": "testuser5",
         "password": "testpass"

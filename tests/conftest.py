@@ -4,7 +4,6 @@ import pytest_asyncio
 from httpx import AsyncClient, ASGITransport
 from asgi_lifespan import LifespanManager
 
-# הוספת תיקיית הפרויקט ל־PYTHONPATH
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from main import app

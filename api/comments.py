@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends, HTTPException, status, Request
+from fastapi import APIRouter, Depends, status, Request
 from domain.comment import CommentCreate, CommentOut, CommentUpdate
 from service.comment_service import CommentService
 from auth.dependencies import get_current_user
