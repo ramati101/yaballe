@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+motor  # Async MongoDB driver
+python-dotenv
+pydantic
+passlib[bcrypt]  # Password hashing
+python-jose[cryptography]  # JWT
+redis
+aiohttp
+httpx
+pytest
+pytest-asyncio
+asgi-lifespan
