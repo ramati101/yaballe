@@ -33,15 +33,16 @@ It supports user authentication, post creation, comments, and search – all wra
 ```bash
 git clone https://github.com/ramati101/yaballe.git
 cd yaballe
+```
 
 
-3. Build and start the containers
-    - docker-compose --env-file .env.docker build
-    - docker-compose --env-file .env.docker up
+### Build and start the containers
+- docker-compose --env-file .env.docker build
+- docker-compose --env-file .env.docker up
 
-* FastAPI doc will be available at: http://localhost:8000/docs
+### * FastAPI doc will be available at: http://localhost:8000/docs
 
 
 ### Running Tests From inside the Docker container
-    - Open a shell inside the app container - 'docker exec -it blog-app bash'
-    - 'pytest tests/'
+- Open a shell inside the app container - 'docker exec -it blog-app bash'
+- 'pytest tests/'
