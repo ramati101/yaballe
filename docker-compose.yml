@@ -26,9 +26,8 @@ services:
     depends_on:
       - mongo
       - redis
-    environment:
-      - MONGO_URL=mongodb://mongo:27017
-      - REDIS_URL=redis://redis:6379
+    env_file:
+      - .env.docker
 
 
 volumes:
